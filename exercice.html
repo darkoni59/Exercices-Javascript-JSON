@@ -3,10 +3,37 @@
 <head>
     <meta charset="utf-8">
     <title>JS-Meteo</title>
+    <script src="exercice.js"></script>
+
+    <script type="text/javascript" src="http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID={b8bd8f4e5e55ea273b62143ce1333be5
+}"></script>
+    <link rel="stylesheet" href="bootstrap.css">
 
 </head>
 <body>
+<section>
+    <article>
+        <form name="recherche"  method="get">
 
+            <label for="recherche">ville demander</label>
+            <input type="text" name="ville" >
+            <button type="submit" id="recherche">recherche:</button>
+            <hr>
+
+        </form>
+
+    </article>
+    <div id="date"></div>
+    <div id="temperature">temperature:</div>
+    <div id="temp_min">minimum:</div>
+    <div id="temp_max">maximum:</div>
+    <div id="vent">vent:</div>
+    <div id="pression">pression:</div>
+    <div id="humidite">humidite:</div>
+    <div id="lattitude">lattitude:</div>
+    <div id="longitude">longitude:</div>
+
+</section>
 
 
 
