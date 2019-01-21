@@ -41,13 +41,15 @@ function ajaxRequest()
                 document.getElementById('lattitude').innerHTML = weather.coord.lat + " °";
     };
 
-    xhttp.open("GET", "index.php", true);
+
+    document.getElementById('ville').value;
+    xhttp.open("GET", "index.php?$recherche="+date, true);
 
     xhttp.send();
 
 
 }
-ajaxRequest();
 
+document.getElementById('recherche').addEventListener("click",ajaxRequest );
 
 
