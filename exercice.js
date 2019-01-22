@@ -42,14 +42,13 @@ function ajaxRequest()
     };
 
 
-    document.getElementById('ville').value;
+    document.getElementById('recherche').value;
     xhttp.open("GET", "index.php?$ville="+date, true);
 
     xhttp.send();
 
 
 }
-ajaxRequest();
 
 document.getElementById('recherche').addEventListener("click",ajaxRequest );
 
