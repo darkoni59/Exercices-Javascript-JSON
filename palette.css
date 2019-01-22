@@ -1,0 +1,31 @@
+button{
+
+    border-radius: 50px;
+background-color: white;
+    color: #00796B;
+
+
+}
+body{
+
+    background-color: #00796B;
+text-align: center;
+color: white;
+    border: solid white;
+}
+input{
+
+    background-color:transparent;
+    text-align: center;
+    border-style: none;
+
+}
+article{
+    text-align: center;
+
+}
+hr{
+background-color: white;
+
+
+}

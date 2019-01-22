@@ -43,12 +43,13 @@ function ajaxRequest()
 
 
     document.getElementById('ville').value;
-    xhttp.open("GET", "index.php?$recherche="+date, true);
+    xhttp.open("GET", "index.php?$ville="+date, true);
 
     xhttp.send();
 
 
 }
+ajaxRequest();
 
 document.getElementById('recherche').addEventListener("click",ajaxRequest );
 
