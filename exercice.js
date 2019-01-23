@@ -42,7 +42,7 @@ function ajaxRequest()
 
 
 var test=document.getElementById('champ').value;
-    xhttp.open("GET", "index.php?$ville="+test, true);
+    xhttp.open("GET", "index.php?ville="+test, true);
 
     xhttp.send();
 
