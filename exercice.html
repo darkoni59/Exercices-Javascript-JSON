@@ -9,13 +9,14 @@
 </head>
 <body class="container">
 <section>
-    <article><form name="recherche"  method="get" class="col-sm-12 ">
-    <label for="recherche"></label>
-        <input type="text" name="recherche" class="col-lg-12"  >
+    <article>
+    <label for="bouton"></label>
+        <input type="text" name="recherche" class="col-lg-12" id="champ"  >
     <hr>
-    <button type="submit" id="recherche"><strong>valider</strong></button>
+    <button id="bouton" ><strong>valider</strong></button>
 
 </div>
+
         <article>
 <div id="date">date</div>
 
@@ -26,7 +27,7 @@
 </form>
         <div id="temperature" class="col-sm-5">temperature:</div>
 
-        <div class="col-xl-12">
+        <div class="col-xl-12" id="ville"></div>
         <div id="temp_max">temp.max:</div>
         <div id="temp_min">temp.min:</div>
         <div id="pression">pres.atmosphérique:</div>
@@ -44,8 +45,9 @@
             <div> </div>
         </div>
 
-        <script src="exercice.js"></script>
+
     </article>
 </section>
+<script src="exercice.js"></script>
 </body>
 </html>

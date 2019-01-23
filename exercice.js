@@ -7,10 +7,9 @@ function ajaxRequest()
         if (this.readyState == 4 && this.status == 200) {
 
             document.getElementById('ville').innerHTML = this.responseText;
-
-            console.log(this.responseText);
-            var ville = this.responseText;      }
-            var weather = JSON.parse(ville);
+            var meteo=this.responseText;
+            }
+            var weather = JSON.parse(meteo);
         document.getElementById('ville').innerHTML = weather.name ;
             var unixtimestamp = weather.dt;
             var months_arr = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -42,14 +41,14 @@ function ajaxRequest()
     };
 
 
-    document.getElementById('recherche').value;
-    xhttp.open("GET", "index.php?$ville="+date, true);
+var test=document.getElementById('champ').value;
+    xhttp.open("GET", "index.php?$ville="+test, true);
 
     xhttp.send();
 
 
 }
 
-document.getElementById('recherche').addEventListener("click",ajaxRequest );
+document.getElementById('bouton').addEventListener("click",ajaxRequest );
 
 

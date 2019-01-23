@@ -6,7 +6,7 @@
  * Time: 11:41
  */
 
-$ville=(isset($_GET['ville'])? $_GET['ville']:null);
+$ville=(isset($_GET['ville'])?$_GET['ville']:null);
 
 $ch = curl_init();
 
@@ -21,5 +21,5 @@ curl_exec($ch);
 curl_close($ch);
 
 
-echo  json_encode($ch);
+  json_encode($ch);
 
